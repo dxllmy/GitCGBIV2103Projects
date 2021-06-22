@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="jt-geteway" />
+        <module name="jt-commmon" />
+        <module name="jt_geteway" />
+        <module name="jt-member" />
+        <module name="jt_01" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="jt-commmon" target="1.8" />
+      <module name="jt-geteway" target="1.5" />
+      <module name="jt-member" target="1.8" />
+      <module name="jt-portal" target="1.8" />
+      <module name="jt_01" target="1.5" />
+      <module name="jt_02" target="1.8" />
+      <module name="jt_geteway" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="jt-member" options="" />
+    </option>
+  </component>
+</project>

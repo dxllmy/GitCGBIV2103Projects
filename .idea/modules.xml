@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/GitCGBIV2103Projects.iml" filepath="$PROJECT_DIR$/.idea/GitCGBIV2103Projects.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jt_02/jt-commmon/jt-commmon.iml" filepath="$PROJECT_DIR$/jt_02/jt-commmon/jt-commmon.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jt_02/jt_geteway/jt-geteway.iml" filepath="$PROJECT_DIR$/jt_02/jt_geteway/jt-geteway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jt_02/jt-portal/jt-member/jt-member.iml" filepath="$PROJECT_DIR$/jt_02/jt-portal/jt-member/jt-member.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jt_02/jt-portal/jt-portal.iml" filepath="$PROJECT_DIR$/jt_02/jt-portal/jt-portal.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jt_01/jt_01.iml" filepath="$PROJECT_DIR$/jt_01/jt_01.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jt_02/jt_02.iml" filepath="$PROJECT_DIR$/jt_02/jt_02.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jt_02/jt-geteway/jt_geteway.iml" filepath="$PROJECT_DIR$/jt_02/jt-geteway/jt_geteway.iml" />
+    </modules>
+  </component>
+</project>
