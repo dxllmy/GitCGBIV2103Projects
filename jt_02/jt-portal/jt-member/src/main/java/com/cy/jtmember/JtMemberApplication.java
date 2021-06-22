@@ -2,6 +2,7 @@ package com.cy.jtmember;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.util.StringUtils;
 
 /**
  * @author tarena
@@ -11,6 +12,8 @@ public class JtMemberApplication {
 
     public static void main(String[] args) {
         SpringApplication.run(JtMemberApplication.class, args);
+
+        System.out.println(StringUtils.isEmpty("hello"));
     }
 
 }

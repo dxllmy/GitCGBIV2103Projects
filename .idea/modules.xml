@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/GitCGBIV2103Projects.iml" filepath="$PROJECT_DIR$/.idea/GitCGBIV2103Projects.iml" />
       <module fileurl="file://$PROJECT_DIR$/jt_02/jt-commmon/jt-commmon.iml" filepath="$PROJECT_DIR$/jt_02/jt-commmon/jt-commmon.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jt_02/jt-commmon/jt-common-basic/jt-common-basic.iml" filepath="$PROJECT_DIR$/jt_02/jt-commmon/jt-common-basic/jt-common-basic.iml" />
       <module fileurl="file://$PROJECT_DIR$/jt_02/jt_geteway/jt-geteway.iml" filepath="$PROJECT_DIR$/jt_02/jt_geteway/jt-geteway.iml" />
       <module fileurl="file://$PROJECT_DIR$/jt_02/jt-portal/jt-member/jt-member.iml" filepath="$PROJECT_DIR$/jt_02/jt-portal/jt-member/jt-member.iml" />
       <module fileurl="file://$PROJECT_DIR$/jt_02/jt-portal/jt-portal.iml" filepath="$PROJECT_DIR$/jt_02/jt-portal/jt-portal.iml" />
