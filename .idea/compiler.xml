@@ -11,11 +11,13 @@
         <module name="jt-member" />
         <module name="jt-common-basic" />
         <module name="jt_01" />
+        <module name="jt-demos" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="jt-commmon" target="1.8" />
       <module name="jt-common-basic" target="1.8" />
+      <module name="jt-demos" target="1.8" />
       <module name="jt-geteway" target="1.5" />
       <module name="jt-member" target="1.8" />
       <module name="jt-portal" target="1.8" />
@@ -27,6 +29,7 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="jt-common-basic" options="" />
+      <module name="jt-demos" options="" />
       <module name="jt-member" options="" />
     </option>
   </component>
