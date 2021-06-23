@@ -36,8 +36,10 @@ public class DemoController {
         return Arrays.toString(id)+"is deleted";
     }
 
+    private int count;
     @GetMapping("{id}")
     public String doFindById(@PathVariable Integer id){
-        return "find result by"+ id;
+        String tName = Thread.currentThread().getName();
+        return tName+" find result by "+ id;
     }
 }
