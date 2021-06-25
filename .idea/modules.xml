@@ -9,9 +9,12 @@
       <module fileurl="file://$PROJECT_DIR$/jt_02/jt_geteway/jt-geteway.iml" filepath="$PROJECT_DIR$/jt_02/jt_geteway/jt-geteway.iml" />
       <module fileurl="file://$PROJECT_DIR$/jt_02/jt-portal/jt-member/jt-member.iml" filepath="$PROJECT_DIR$/jt_02/jt-portal/jt-member/jt-member.iml" />
       <module fileurl="file://$PROJECT_DIR$/jt_02/jt-portal/jt-portal.iml" filepath="$PROJECT_DIR$/jt_02/jt-portal/jt-portal.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jt-sca-03/jt-sca-03.iml" filepath="$PROJECT_DIR$/jt-sca-03/jt-sca-03.iml" />
       <module fileurl="file://$PROJECT_DIR$/jt_01/jt_01.iml" filepath="$PROJECT_DIR$/jt_01/jt_01.iml" />
       <module fileurl="file://$PROJECT_DIR$/jt_02/jt_02.iml" filepath="$PROJECT_DIR$/jt_02/jt_02.iml" />
       <module fileurl="file://$PROJECT_DIR$/jt_02/jt-geteway/jt_geteway.iml" filepath="$PROJECT_DIR$/jt_02/jt-geteway/jt_geteway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jt-sca-03/sca-consumer/sca-consumer.iml" filepath="$PROJECT_DIR$/jt-sca-03/sca-consumer/sca-consumer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jt-sca-03/sca-provider/sca-provider.iml" filepath="$PROJECT_DIR$/jt-sca-03/sca-provider/sca-provider.iml" />
     </modules>
   </component>
 </project>
