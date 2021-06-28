@@ -1,6 +1,7 @@
 package com.cy.scaconsumer.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpMethod;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -16,6 +17,24 @@ import java.util.Map;
 public class RestConsumerController {
     @Autowired
     private RestTemplate loadBalancedRestTemplate;
+
+    //修改操作
+    @PutMapping
+    public Map<String,Object> doUpdate(@RequestBody Map<String,Object> request){
+        System.out.println("consumer.request="+request);
+        String url = String.format("http://%s/provider/","sca-provider");
+        //如下方式的更新,默认没有返回值
+        //loadBalancedRestTemplate.put(url,request);
+
+        //假如希望获取服务提供方执行更新操作时的响应结果,可以采用如下方式
+        ResponseEntity<Map> responseEntity =
+                loadBalancedRestTemplate.exchange(
+                    url,
+                    HttpMethod.PUT,
+                    new HttpEntity<>(request),
+                    Map.class);
+        return responseEntity.getBody();
+    }
 
     //添加操作
     @PostMapping
