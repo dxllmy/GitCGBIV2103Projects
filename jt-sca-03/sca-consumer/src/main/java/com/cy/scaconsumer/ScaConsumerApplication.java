@@ -58,6 +58,9 @@ public class ScaConsumerApplication {
         @Autowired
         private RestTemplate restTemplate;
 
+        /**
+         * 因为loadBalancedRestTemplate()已经加入了Bean里，所以能找到
+         */
         @Autowired
         private RestTemplate loadBalancedRestTemplate;
 
