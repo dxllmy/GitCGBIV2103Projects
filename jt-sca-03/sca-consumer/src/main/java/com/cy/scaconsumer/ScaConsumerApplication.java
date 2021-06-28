@@ -47,8 +47,6 @@ public class ScaConsumerApplication {
         @Autowired
         private RestTemplate restTemplate;
 
-//        @Autowired
-//        private LoadBalancerClient loadBalancerClient;
 
         @Autowired
         private RestTemplate loadBalancedRestTemplate;
