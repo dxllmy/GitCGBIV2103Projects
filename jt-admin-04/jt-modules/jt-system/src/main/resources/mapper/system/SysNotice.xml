@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.cy.jtsystem.system.dao.SysNoticesDao">
+    <sql id="selectNoticeId">
+        select id,title,content,type,status,remark,createdUser,modifiedUser,createdTime,modifiedTime
+        from `jt-cloud-admin`.sys_notices
+    </sql>
+
+    <select id="selectById" resultType="com.cy.jtsystem.system.domain.SysNotices">
+        <include refid="selectNoticeId"/>
+        where id=#{id}
+    </select>
+
+    <select id="selectNotices" resultType="com.cy.jtsystem.system.domain.SysNotices">
+        <include refid="selectNoticeId"/>
+        <where>
+            <if test="title!=null and title!=''">
+                title like concat("%",#{title},"%")
+            </if>
+
+            <if test="createdUser!=null and createdUser!=''">
+                and createdUser like concat("%",#{createdUser},"%")
+            </if>
+
+            <if test="type!=null and type!=''">
+                and type like concat("%",#{type},"%")
+            </if>
+        </where>
+    </select>
+
+    <!--基于id执行删除操作-->
+    <delete id="deleteById" >
+        delete from `jt-cloud-admin`.sys_notices
+        <where>
+<!--            如果不写这一句，当下面那句if语句<if test="array!=null or array.length!=0">-->
+<!--            没实现的话，则执行的sql语句只有delete from `jt-cloud-admin`.sys_notices，-->
+<!--            那么会删除整个表的内容，造成重大损失-->
+<!--            <if test="array=null or array.length=0">-->
+<!--                1=2-->
+<!--            </if>-->
+            <if test="array!=null or array.length!=0">
+                id in
+                    <foreach collection="array" open="(" close=")" separator="," item="id">
+                        #{id}
+                    </foreach>
+            </if>
+            or 1=2
+        </where>
+    </delete>
+
+    <!--新增公告信息-->
+    <insert id="insertNotice" parameterType="com.cy.jtsystem.system.domain.SysNotices">
+        insert into `jt-cloud-admin`.sys_notices
+        (title,content,type,status,remark,createdUser,modifiedUser,createdTime,modifiedTime)
+        values
+        (#{title},#{content},#{type},#{status},#{remark},#{createdUser},#{modifiedUser},now(),now())
+    </insert>
+
+    <!--更新公告信息-->
+    <update id="updateNotice" parameterType="com.cy.jtsystem.system.domain.SysNotices">
+        update `jt-cloud-admin`.sys_notices
+        set title=#{title},
+            content=#{content},
+            type=#{type},
+            status=#{status},
+            remark=#{remark},
+            modifiedUser=#{modifiedUser},
+            modifiedTime=now()
+        where id=#{id}
+    </update>
+
+</mapper>

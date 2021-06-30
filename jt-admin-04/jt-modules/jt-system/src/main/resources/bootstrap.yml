@@ -17,3 +17,6 @@ spring:
 #logging:
 #  level:
 #    com.cy: debug
+#mybatis:
+#  mapper-locations: classpath:mapper/*/*.xml
+
