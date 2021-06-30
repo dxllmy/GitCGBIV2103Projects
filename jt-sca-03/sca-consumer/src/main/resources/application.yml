@@ -2,10 +2,12 @@ server:
   port: 8090
 spring:
   application:
-    name: nacos-consumer
+    name: sca-consumer
   #服务注册
   cloud:
     nacos:
       discovery:
         server-addr: localhost:8848 #从哪里去查找服务
-
+logging:
+  level:
+    com.cy: debug

@@ -14,6 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
 
 /**
+ * nacos注册中心消费者
  * @author tarena
  *   当我们的主启动类使用@EnableFeignClients注解描述时,spring工程
  *   在启动时会扫描@FeignClient注解描述的接口,并基于接口创建其实现类
@@ -34,10 +35,9 @@ public class ScaConsumerApplication {
     }
 
     /**
-     * @Bean注解由spring提供,通常用于描述方法,用于告诉spring框架
+     * Bean注解由spring提供,通常用于描述方法,用于告诉spring框架
      * 此方法的返回值要交给spring管理.类似@Controller,@Service,@Component注解(
      * 这些注解一般描述的是类)
-     * @return
      */
     @Bean
     @LoadBalanced

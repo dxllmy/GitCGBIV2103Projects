@@ -1,0 +1,31 @@
+#为什么将application.yml改为bootstrap，因为bootstrap优先级是最高的，会优先读取
+#server:
+#  port: 8082
+#spring:
+#  application:
+#    name: sca-provider
+#  #服务的注册
+#  cloud:
+#    nacos:
+##      server-addr: localhost:8848
+#      discovery: #服务注册
+#        server-addr: localhost:8848
+#      #服务的配置
+#      config:
+#        server-addr: localhost:8848
+#        #分组可以不写，如果不写就是默认格式DEFAULT_GROUP
+#        group: DEFAULT_GROUP
+#        file-extension: yml
+
+server:
+  port: 8081
+spring:
+  application:
+    name: sca-provider
+  cloud:
+    nacos:
+      discovery: #服务注册
+        server-addr: localhost:8848
+      config:  #服务配置
+        server-addr: localhost:8848
+        file-extension: yml
