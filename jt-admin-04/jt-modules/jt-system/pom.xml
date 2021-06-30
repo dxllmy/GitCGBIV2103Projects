@@ -16,7 +16,12 @@
         <java.version>1.8</java.version>
     </properties>
     <dependencies>
-
+        <!--添加单元测试依赖-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
     </dependencies>
 
     <build>
