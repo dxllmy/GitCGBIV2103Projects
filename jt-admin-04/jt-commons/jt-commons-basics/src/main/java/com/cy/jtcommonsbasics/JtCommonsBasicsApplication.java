@@ -10,4 +10,5 @@ public class JtCommonsBasicsApplication {
         SpringApplication.run(JtCommonsBasicsApplication.class, args);
     }
 
+
 }

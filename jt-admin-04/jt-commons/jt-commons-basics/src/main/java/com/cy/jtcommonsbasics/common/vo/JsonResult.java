@@ -1,15 +1,23 @@
 package com.cy.jtcommonsbasics.common.vo;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 import lombok.experimental.Accessors;
 
 import java.io.Serializable;
 
 /**
  * @author tarena
+ * 通了Feign之后需要调用无参构造，所以需要以后最好把@Data，
+ * //@Accessors(chain = true)，//@AllArgsConstructor，
+ * //@NoArgsConstructor
+ * 这些注解都写上
  */
 @Data
-@Accessors
+@Accessors(chain = true)
+@AllArgsConstructor
+@NoArgsConstructor
 public class JsonResult implements Serializable {
     private static final long serialVersionUID = -362993439657980400L;
     /**

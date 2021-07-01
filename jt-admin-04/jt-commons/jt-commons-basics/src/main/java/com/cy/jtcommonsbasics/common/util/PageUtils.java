@@ -14,6 +14,7 @@ import javax.servlet.http.HttpServletRequest;
 public class PageUtils {
     public static <T>Page<T> startPage(){
         //spring中获取request对象
+        //路径中我们输入的所有参数都会封装在RequestContextHolder里
         ServletRequestAttributes requestAttributes = (ServletRequestAttributes) RequestContextHolder.getRequestAttributes();
 
         HttpServletRequest request = requestAttributes.getRequest();
