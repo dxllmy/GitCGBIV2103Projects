@@ -7,14 +7,16 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="jt-geteway" />
-        <module name="sca-provider" />
-        <module name="sca-consumer" />
         <module name="jt-system" />
         <module name="jt_geteway" />
         <module name="jt-member" />
+        <module name="jt-portals" />
         <module name="jt-demos" />
         <module name="sca-provider-config" />
+        <module name="jt-geteway" />
+        <module name="sca-provider" />
+        <module name="sca-consumer" />
+        <module name="jt-commons-basics" />
         <module name="jt-common-basic" />
         <module name="jt_01" />
       </profile>
@@ -24,11 +26,14 @@
       <module name="jt-admin-04" target="1.8" />
       <module name="jt-commmon" target="1.8" />
       <module name="jt-common-basic" target="1.8" />
+      <module name="jt-commons" target="1.8" />
+      <module name="jt-commons-basics" target="1.8" />
       <module name="jt-demos" target="1.8" />
       <module name="jt-geteway" target="1.5" />
       <module name="jt-member" target="1.8" />
       <module name="jt-modules" target="1.8" />
       <module name="jt-portal" target="1.8" />
+      <module name="jt-portals" target="1.8" />
       <module name="jt-sca-03" target="1.8" />
       <module name="jt-system" target="1.8" />
       <module name="jt_01" target="1.8" />
@@ -44,9 +49,12 @@
       <module name="demo1" options="-parameters" />
       <module name="jt-admin-04" options="-parameters" />
       <module name="jt-common-basic" options="" />
+      <module name="jt-commons" options="-parameters" />
+      <module name="jt-commons-basics" options="-parameters" />
       <module name="jt-demos" options="" />
       <module name="jt-member" options="" />
       <module name="jt-modules" options="-parameters" />
+      <module name="jt-portals" options="-parameters" />
       <module name="jt-sca-03" options="-parameters" />
       <module name="jt-system" options="-parameters" />
       <module name="jt_01" options="-parameters" />

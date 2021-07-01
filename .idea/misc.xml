@@ -18,6 +18,9 @@
         <option value="$PROJECT_DIR$/jt-admin-04/pom.xml" />
         <option value="$PROJECT_DIR$/jt-admin-04/jt-modules/pom.xml" />
         <option value="$PROJECT_DIR$/jt-admin-04/jt-modules/jt-system/pom.xml" />
+        <option value="$PROJECT_DIR$/jt-admin-04/jt-modules/jt-portals/pom.xml" />
+        <option value="$PROJECT_DIR$/jt-admin-04/jt-commons/pom.xml" />
+        <option value="$PROJECT_DIR$/jt-admin-04/jt-commons/jt-commons-basics/pom.xml" />
       </list>
     </option>
   </component>

@@ -6,11 +6,14 @@
       <module fileurl="file://$PROJECT_DIR$/jt-admin-04/jt-admin-04.iml" filepath="$PROJECT_DIR$/jt-admin-04/jt-admin-04.iml" />
       <module fileurl="file://$PROJECT_DIR$/jt_02/jt-commmon/jt-commmon.iml" filepath="$PROJECT_DIR$/jt_02/jt-commmon/jt-commmon.iml" />
       <module fileurl="file://$PROJECT_DIR$/jt_02/jt-commmon/jt-common-basic/jt-common-basic.iml" filepath="$PROJECT_DIR$/jt_02/jt-commmon/jt-common-basic/jt-common-basic.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jt-admin-04/jt-commons/jt-commons.iml" filepath="$PROJECT_DIR$/jt-admin-04/jt-commons/jt-commons.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jt-admin-04/jt-commons/jt-commons-basics/jt-commons-basics.iml" filepath="$PROJECT_DIR$/jt-admin-04/jt-commons/jt-commons-basics/jt-commons-basics.iml" />
       <module fileurl="file://$PROJECT_DIR$/jt_02/jt-portal/jt-demos/jt-demos.iml" filepath="$PROJECT_DIR$/jt_02/jt-portal/jt-demos/jt-demos.iml" />
       <module fileurl="file://$PROJECT_DIR$/jt_02/jt_geteway/jt-geteway.iml" filepath="$PROJECT_DIR$/jt_02/jt_geteway/jt-geteway.iml" />
       <module fileurl="file://$PROJECT_DIR$/jt_02/jt-portal/jt-member/jt-member.iml" filepath="$PROJECT_DIR$/jt_02/jt-portal/jt-member/jt-member.iml" />
       <module fileurl="file://$PROJECT_DIR$/jt-admin-04/jt-modules/jt-modules.iml" filepath="$PROJECT_DIR$/jt-admin-04/jt-modules/jt-modules.iml" />
       <module fileurl="file://$PROJECT_DIR$/jt_02/jt-portal/jt-portal.iml" filepath="$PROJECT_DIR$/jt_02/jt-portal/jt-portal.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jt-admin-04/jt-modules/jt-portals/jt-portals.iml" filepath="$PROJECT_DIR$/jt-admin-04/jt-modules/jt-portals/jt-portals.iml" />
       <module fileurl="file://$PROJECT_DIR$/jt-sca-03/jt-sca-03.iml" filepath="$PROJECT_DIR$/jt-sca-03/jt-sca-03.iml" />
       <module fileurl="file://$PROJECT_DIR$/jt-admin-04/jt-modules/jt-system/jt-system.iml" filepath="$PROJECT_DIR$/jt-admin-04/jt-modules/jt-system/jt-system.iml" />
       <module fileurl="file://$PROJECT_DIR$/jt_01/jt_01.iml" filepath="$PROJECT_DIR$/jt_01/jt_01.iml" />

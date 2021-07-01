@@ -48,10 +48,19 @@ public class SysNoticesController {
         return new JsonResult(sysNoticeService.selectById(id));
     }
 
+    /**
+     * 利用service层的返回值，就要这么写，返回1代表成功，返回0代表错误
+     * @param sysNotices
+     * @return
+     */
     @PostMapping("/insertNotices")
     public JsonResult insertNotices(@RequestBody SysNotices sysNotices){
-        sysNoticeService.insertNotice(sysNotices);
-        return new JsonResult("insert of");
+        if(sysNoticeService.insertNotice(sysNotices)==1){
+            return new JsonResult("insert of");
+        }
+        return new JsonResult("添加失败");
+
+
     }
 
     @PutMapping("/updateNotices")
