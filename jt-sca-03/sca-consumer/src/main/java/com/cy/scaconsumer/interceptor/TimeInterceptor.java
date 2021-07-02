@@ -18,7 +18,7 @@ public class TimeInterceptor implements HandlerInterceptor {
         LocalDateTime time=LocalDateTime.now();
         int hour=time.getHour();
         System.out.println("hour="+hour);
-        if(hour<15||hour>23)
+        if(hour<6||hour>23)
             throw new RuntimeException("请在指定时间访问");
         return true;//true表示放行
     }
