@@ -1,5 +1,6 @@
 package com.cy.scaconsumer;
 
+import com.alibaba.csp.sentinel.annotation.SentinelResource;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.SpringApplication;
@@ -9,6 +10,7 @@ import org.springframework.cloud.client.loadbalancer.LoadBalanced;
 import org.springframework.cloud.client.loadbalancer.LoadBalancerClient;
 import org.springframework.cloud.openfeign.EnableFeignClients;
 import org.springframework.context.annotation.Bean;
+import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
@@ -69,6 +71,10 @@ public class ScaConsumerApplication {
         @Autowired
         private LoadBalancerClient loadBalancerClient;
 
+        @Autowired
+        private ConsumerService consumerService;
+
+
         @GetMapping("/consumer/doRestEcho1")
         public String doRestEcho(){
             ServiceInstance serviceInstance =
@@ -120,12 +126,22 @@ public class ScaConsumerApplication {
 
         @GetMapping("/consumer/doRestEcho03")
         public String doRestEcho03(){
+
+            consumerService.doConsumerService();
+
             String url=String.format("http://%s/provider/echo/%s","sca-provider",consumerName);
             //调用服务提供方(sca-provider)
             return loadBalancedRestTemplate.getForObject(url,String.class);
         }
     }
 
+    @Service
+    public class ConsumerService{
+        @SentinelResource("doConsumerService")
+        public String doConsumerService(){
+            return "do consumer service";
+        }
+    }
 
 
 }
