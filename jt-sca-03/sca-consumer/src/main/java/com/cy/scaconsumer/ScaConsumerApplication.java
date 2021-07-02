@@ -12,8 +12,11 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
 import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
+
+import java.util.concurrent.atomic.AtomicLong;
 
 /**
  * nacos注册中心消费者
@@ -123,18 +126,36 @@ public class ScaConsumerApplication {
             return restTemplate.getForObject(url,String.class);
         }
 
+        //测试熔断
+        //创建一个可实现自增自减功能的一个对象
+        private AtomicLong atomicLong=new AtomicLong(0);
 
         @GetMapping("/consumer/doRestEcho03")
-        public String doRestEcho03(){
+        public String doRestEcho03() throws InterruptedException{
+            //测试熔断机制
+            long num=atomicLong.getAndIncrement();
+            if(num%2==0)
+                Thread.sleep(200);//模拟耗时操作
 
-            consumerService.doConsumerService();
+            //流控规则中的链路限流
+//            consumerService.doConsumerService();
 
             String url=String.format("http://%s/provider/echo/%s","sca-provider",consumerName);
             //调用服务提供方(sca-provider)
             return loadBalancedRestTemplate.getForObject(url,String.class);
         }
+
+
+        @GetMapping("/consumer/doRestEcho04")
+        @SentinelResource
+        public String doRestEcho04(@RequestParam(required = false) Integer id,
+                                   @RequestParam(required = false) String name){
+            return String.format("request id=%d,name=%s",id,name);
+
+        }
     }
 
+    //在doRestEcho03()流控规则中的链路限流
     @Service
     public class ConsumerService{
         @SentinelResource("doConsumerService")
@@ -142,6 +163,8 @@ public class ScaConsumerApplication {
             return "do consumer service";
         }
     }
+
+
 
 
 }
