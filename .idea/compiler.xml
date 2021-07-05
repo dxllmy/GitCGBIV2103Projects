@@ -13,6 +13,7 @@
         <module name="jt-portals" />
         <module name="jt-demos" />
         <module name="sca-provider-config" />
+        <module name="sca-gateway" />
         <module name="jt-geteway" />
         <module name="sca-provider" />
         <module name="sca-consumer" />
@@ -40,6 +41,7 @@
       <module name="jt_02" target="1.8" />
       <module name="jt_geteway" target="1.8" />
       <module name="sca-consumer" target="1.8" />
+      <module name="sca-gateway" target="1.8" />
       <module name="sca-provider" target="1.8" />
       <module name="sca-provider-config" target="1.8" />
     </bytecodeTargetLevel>
@@ -59,6 +61,7 @@
       <module name="jt-system" options="-parameters" />
       <module name="jt_01" options="-parameters" />
       <module name="sca-consumer" options="-parameters" />
+      <module name="sca-gateway" options="-parameters" />
       <module name="sca-provider" options="-parameters" />
       <module name="sca-provider-config" options="-parameters" />
     </option>

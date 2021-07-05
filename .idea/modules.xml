@@ -20,6 +20,7 @@
       <module fileurl="file://$PROJECT_DIR$/jt_02/jt_02.iml" filepath="$PROJECT_DIR$/jt_02/jt_02.iml" />
       <module fileurl="file://$PROJECT_DIR$/jt_02/jt-geteway/jt_geteway.iml" filepath="$PROJECT_DIR$/jt_02/jt-geteway/jt_geteway.iml" />
       <module fileurl="file://$PROJECT_DIR$/jt-sca-03/sca-consumer/sca-consumer.iml" filepath="$PROJECT_DIR$/jt-sca-03/sca-consumer/sca-consumer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jt-sca-03/sca-gateway/sca-gateway.iml" filepath="$PROJECT_DIR$/jt-sca-03/sca-gateway/sca-gateway.iml" />
       <module fileurl="file://$PROJECT_DIR$/jt-sca-03/sca-provider/sca-provider.iml" filepath="$PROJECT_DIR$/jt-sca-03/sca-provider/sca-provider.iml" />
       <module fileurl="file://$PROJECT_DIR$/jt-sca-03/sca-provider-config/sca-provider-config.iml" filepath="$PROJECT_DIR$/jt-sca-03/sca-provider-config/sca-provider-config.iml" />
     </modules>

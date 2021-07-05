@@ -8,7 +8,7 @@
         <version>0.0.1-SNAPSHOT</version>
     </parent>
 
-    <groupId>com.cy</groupId>
+
     <artifactId>sca-provider-config</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>sca-provider-config</name>
