@@ -1,13 +1,13 @@
-package com.cy.jtredis05;
+package com.cy.jtjedis;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class JtRedis05Application {
+public class JtJedisApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(JtRedis05Application.class, args);
+        SpringApplication.run(JtJedisApplication.class, args);
     }
 
 }

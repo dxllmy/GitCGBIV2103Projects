@@ -10,6 +10,7 @@
       <module fileurl="file://$PROJECT_DIR$/jt-admin-04/jt-commons/jt-commons-basics/jt-commons-basics.iml" filepath="$PROJECT_DIR$/jt-admin-04/jt-commons/jt-commons-basics/jt-commons-basics.iml" />
       <module fileurl="file://$PROJECT_DIR$/jt_02/jt-portal/jt-demos/jt-demos.iml" filepath="$PROJECT_DIR$/jt_02/jt-portal/jt-demos/jt-demos.iml" />
       <module fileurl="file://$PROJECT_DIR$/jt_02/jt_geteway/jt-geteway.iml" filepath="$PROJECT_DIR$/jt_02/jt_geteway/jt-geteway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jt-redis-05/jt-jedis/jt-jedis.iml" filepath="$PROJECT_DIR$/jt-redis-05/jt-jedis/jt-jedis.iml" />
       <module fileurl="file://$PROJECT_DIR$/jt_02/jt-portal/jt-member/jt-member.iml" filepath="$PROJECT_DIR$/jt_02/jt-portal/jt-member/jt-member.iml" />
       <module fileurl="file://$PROJECT_DIR$/jt-admin-04/jt-modules/jt-modules.iml" filepath="$PROJECT_DIR$/jt-admin-04/jt-modules/jt-modules.iml" />
       <module fileurl="file://$PROJECT_DIR$/jt_02/jt-portal/jt-portal.iml" filepath="$PROJECT_DIR$/jt_02/jt-portal/jt-portal.iml" />
@@ -17,6 +18,7 @@
       <module fileurl="file://$PROJECT_DIR$/jt-redis-05/jt-redis-05.iml" filepath="$PROJECT_DIR$/jt-redis-05/jt-redis-05.iml" />
       <module fileurl="file://$PROJECT_DIR$/jt-sca-03/jt-sca-03.iml" filepath="$PROJECT_DIR$/jt-sca-03/jt-sca-03.iml" />
       <module fileurl="file://$PROJECT_DIR$/jt-admin-04/jt-modules/jt-system/jt-system.iml" filepath="$PROJECT_DIR$/jt-admin-04/jt-modules/jt-system/jt-system.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jt-redis-05/jt-template/jt-template.iml" filepath="$PROJECT_DIR$/jt-redis-05/jt-template/jt-template.iml" />
       <module fileurl="file://$PROJECT_DIR$/jt_01/jt_01.iml" filepath="$PROJECT_DIR$/jt_01/jt_01.iml" />
       <module fileurl="file://$PROJECT_DIR$/jt_02/jt_02.iml" filepath="$PROJECT_DIR$/jt_02/jt_02.iml" />
       <module fileurl="file://$PROJECT_DIR$/jt_02/jt-geteway/jt_geteway.iml" filepath="$PROJECT_DIR$/jt_02/jt-geteway/jt_geteway.iml" />
