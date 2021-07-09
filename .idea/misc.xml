@@ -22,6 +22,7 @@
         <option value="$PROJECT_DIR$/jt-admin-04/jt-commons/pom.xml" />
         <option value="$PROJECT_DIR$/jt-admin-04/jt-commons/jt-commons-basics/pom.xml" />
         <option value="$PROJECT_DIR$/jt-sca-03/sca-gateway/pom.xml" />
+        <option value="$PROJECT_DIR$/jt-redis-05/pom.xml" />
       </list>
     </option>
   </component>
