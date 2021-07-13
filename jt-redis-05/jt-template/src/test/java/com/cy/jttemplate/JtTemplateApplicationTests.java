@@ -9,6 +9,9 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.concurrent.TimeUnit;
 
+/**
+ * 07.09写
+ */
 @SpringBootTest
 class JtTemplateApplicationTests {
 
@@ -18,8 +21,6 @@ class JtTemplateApplicationTests {
 
     @Autowired
     private StringRedisTemplate stringRedisTemplate;
-
-
 
     /**
      * 测试连接
