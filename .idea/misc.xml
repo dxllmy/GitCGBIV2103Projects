@@ -25,6 +25,7 @@
         <option value="$PROJECT_DIR$/jt-redis-05/pom.xml" />
         <option value="$PROJECT_DIR$/jt-redis-05/jt-jedis/pom.xml" />
         <option value="$PROJECT_DIR$/jt-redis-05/jt-template/pom.xml" />
+        <option value="$PROJECT_DIR$/jt-admin-04/jt-commons/jt-common-redis/pom.xml" />
       </list>
     </option>
   </component>

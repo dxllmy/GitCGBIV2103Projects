@@ -41,6 +41,29 @@
             <artifactId>pagehelper-spring-boot-starter</artifactId>
             <version>1.3.0</version>
         </dependency>
+
+
+        <!--做redis缓存测试使用-->
+        <dependency>
+            <groupId>com.cy</groupId>
+            <artifactId>jt-common-redis</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+
+        <!--aop-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-aop</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.cy</groupId>
+            <artifactId>jt-commons-basics</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+            <scope>compile</scope>
+        </dependency>
+
+
     </dependencies>
 
     <build>

@@ -12,6 +12,7 @@
 
     <modules>
         <module>jt-commons-basics</module>
+        <module>jt-common-redis</module>
     </modules>
 
 

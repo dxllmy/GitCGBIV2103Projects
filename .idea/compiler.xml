@@ -15,6 +15,7 @@
         <module name="jt-demos" />
         <module name="sca-provider-config" />
         <module name="sca-gateway" />
+        <module name="jt-common-redis" />
         <module name="jt-jedis" />
         <module name="jt-geteway" />
         <module name="sca-provider" />
@@ -29,6 +30,7 @@
       <module name="jt-admin-04" target="1.8" />
       <module name="jt-commmon" target="1.8" />
       <module name="jt-common-basic" target="1.8" />
+      <module name="jt-common-redis" target="1.8" />
       <module name="jt-commons" target="1.8" />
       <module name="jt-commons-basics" target="1.8" />
       <module name="jt-demos" target="1.8" />
@@ -56,6 +58,7 @@
       <module name="demo1" options="-parameters" />
       <module name="jt-admin-04" options="-parameters" />
       <module name="jt-common-basic" options="" />
+      <module name="jt-common-redis" options="-parameters" />
       <module name="jt-commons" options="-parameters" />
       <module name="jt-commons-basics" options="-parameters" />
       <module name="jt-demos" options="" />
