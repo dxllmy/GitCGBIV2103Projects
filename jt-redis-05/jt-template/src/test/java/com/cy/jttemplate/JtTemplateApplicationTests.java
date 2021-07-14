@@ -11,6 +11,7 @@ import java.util.concurrent.TimeUnit;
 
 /**
  * 07.09写
+ * 测试redis各种语句
  */
 @SpringBootTest
 class JtTemplateApplicationTests {

@@ -15,6 +15,7 @@ import java.util.Set;
 
 /**
  * 07.12重写的，老师账号丢了，部分内容与09一样
+ * 测试redis各种语句
  */
 @SpringBootTest
 public class RedisTemplateTests {
@@ -28,8 +29,10 @@ public class RedisTemplateTests {
                 redisTemplate.getConnectionFactory().getConnection().ping();
         System.out.println(result);
     }
-    //定义清除数据库数据的方法
 
+    /**
+     * 定义清除数据库数据的方法
+     */
     @Test
     void testFlushdb(){
         redisTemplate.execute(new RedisCallback() {

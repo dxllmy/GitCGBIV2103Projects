@@ -13,6 +13,7 @@ import javax.servlet.http.HttpServletRequest;
 
 /**
  * @author tarena
+ * 消费者端
  */
 @EnableFeignClients
 @SpringBootApplication

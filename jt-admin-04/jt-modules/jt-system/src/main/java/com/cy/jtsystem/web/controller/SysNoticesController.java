@@ -7,6 +7,7 @@ import com.cy.jtsystem.web.vo.JsonResult;
 import com.github.pagehelper.ISelect;
 import com.github.pagehelper.PageHelper;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.web.bind.annotation.*;
 
 /**
@@ -19,11 +20,23 @@ public class SysNoticesController {
     @Autowired
     private SysNoticeService sysNoticeService;
 
-//    @GetMapping("/doSelectNotices")
-//    public JsonResult doSelectNotices(SysNotices sysNotices){
-//        return new JsonResult(sysNoticeService.selectNotices(sysNotices));
-//    }
+    /**
+     * 查询所有数据
+     * Cacheable 这个注解描述的方法,在执行时,系统底层会先去查询缓存，
+     * 这里notices表示缓存的名称，不是key
+     */
+    @Cacheable(value = "notices")
+    @GetMapping("/doSelectNotices0")
+    public JsonResult doSelectNotices0(SysNotices sysNotices){
+        return new JsonResult(sysNoticeService.selectNotices(sysNotices));
+    }
 
+    /**
+     * 分页查询数据，和查询所有数据用的同一个service层和Dao层
+     * Cacheable 这个注解描述的方法,在执行时,系统底层会先去查询缓存，
+     * 这里notices表示缓存的名称，不是key
+     */
+    @Cacheable(value = "notices")
     @GetMapping("/doSelectNotices")
     public JsonResult doSelectNotices(SysNotices sysNotices){
         //原来的写法
@@ -49,9 +62,8 @@ public class SysNoticesController {
     }
 
     /**
+     * 新增数据
      * 利用service层的返回值，就要这么写，返回1代表成功，返回0代表错误
-     * @param sysNotices
-     * @return
      */
     @PostMapping("/insertNotices")
     public JsonResult insertNotices(@RequestBody SysNotices sysNotices){
@@ -63,12 +75,18 @@ public class SysNoticesController {
 
     }
 
+    /**
+     * 更新数据
+     */
     @PutMapping("/updateNotices")
     public JsonResult updateNotices(@RequestBody SysNotices sysNotices){
         sysNoticeService.updateNotice(sysNotices);
         return new JsonResult("update ok");
     }
 
+    /**
+     * 删除数据
+     */
     @DeleteMapping("/deleteNotices/{id}")
     public JsonResult deleteNotices(@PathVariable Long ...id){
         sysNoticeService.deleteById(id);
