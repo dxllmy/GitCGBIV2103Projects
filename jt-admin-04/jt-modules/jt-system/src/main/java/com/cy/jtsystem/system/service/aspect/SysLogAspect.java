@@ -27,11 +27,13 @@ import java.lang.reflect.Method;
  * 切入点和通知方法
  * （1）切入点：要执行扩展业务的一些方法集合（这些方法通常会认为是切入点方法）
  * （2）通知方法：用于封装扩展业务逻辑的方法
+ *
+ * EnableAsync 异步 也可以写在启动类上面
  */
 @Order(Ordered.HIGHEST_PRECEDENCE)
 @Aspect
 @Component
-@EnableAsync
+//@EnableAsync
 public class SysLogAspect {
 
     @Autowired
@@ -43,9 +45,12 @@ public class SysLogAspect {
     /**
      * @Pointcut 注解用于定义切入点,@annotation为一个切入点表达式,表达式中注解
      * 描述的方法为切入点方法
+     * doLog方法没有意义,只是用于承载上面的注解
      */
     @Pointcut("@annotation(com.cy.jtcommonsbasics.common.annotaion.RequiredLog)")
-    public void doLog(){}//doLog方法没有意义,只是用于承载上面的注解
+    public void doLog(){
+
+    }
 
     /**
      * Around 注解 描述的方法为通知方法,此方法内部可以直接调用目标方法(就是要织入
@@ -112,6 +117,7 @@ public class SysLogAspect {
         String classMethodName = targetCls.getName()+"."+targetMethod.getName();
         //1.5 获取方法实际参数信息
         Object[] args = joinPoint.getArgs();
+        //new ObjectMapper().writeValueAsString() 把对象转换成json字符串
         String params = new ObjectMapper().writeValueAsString(args);
         //2.封装用户行为日志
         SysLogs sysLogs=new SysLogs();
@@ -131,7 +137,7 @@ public class SysLogAspect {
         String userLog = new ObjectMapper().writeValueAsString(sysLogs);
         log.info("user.oper {}" , userLog);
 
-        sysLogsService.insert(sysLogs);
+        sysLogsService.insertLog(sysLogs);
 
 
     }

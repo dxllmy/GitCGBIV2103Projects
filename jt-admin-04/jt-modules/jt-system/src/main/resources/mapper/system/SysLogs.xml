@@ -4,11 +4,60 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.cy.jtsystem.system.dao.SysLogsDao">
 
-    <insert id="insert">
+    <sql id="selectColumns">
+        select id,username,ip,operation,method,
+               params,status,error,time,createdTime
+        from `jt-cloud-admin`.sys_logs
+    </sql>
+
+
+    <insert id="insertLog">
         insert into `jt-cloud-admin`.sys_logs
         ( username, operation, method, params, time, ip, createdTime, status, error)
         values
         ( #{username}, #{operation},#{method},#{params},#{time},#{ip},now(),#{status},#{error})
     </insert>
+
+
+    <select id="selectLogs" resultType="com.cy.jtsystem.system.domain.SysLogs">
+        <include refid="selectColumns"/>
+        <where>
+            <if test="status!=null">
+                status=#{status}
+            </if>
+            <if test="operation!=null and operation!=''">
+                and operation like
+                concat("%",#{operation},"%")
+            </if>
+            <if test="username!=null and username!=''">
+                and  username like
+                concat("%",#{username},"%")
+            </if>
+        </where>
+        order by createdTime desc
+    </select>
+
+
+    <select id="selectById" resultType="com.cy.jtsystem.system.domain.SysLogs">
+        <include refid="selectColumns"/>
+        where id=#{id}
+    </select>
+
+
+    <delete id="deleteById"><!--(1,2,3,4,5)-->
+        <!--foreach 用于迭代一个数组或集合-->
+        delete from `jt-cloud-admin`.sys_logs
+        <where>
+            <if test="array!=null and array.length>0">
+                id in
+                <foreach collection="array" open="(" close=")" separator=","
+                         item="id">
+                    #{id}
+                </foreach>
+            </if>
+            or 1=2
+        </where>
+    </delete>
+
 
 </mapper>

@@ -20,6 +20,15 @@ spring:
     cluster:
       nodes: 192.168.126.129:8010,192.168.126.129:8011,192.168.126.129:8012,192.168.126.129:8013,192.168.126.129:8014,192.168.126.129:8015
       max-redirects: 3
+  #用于aop异步
+  task:
+    execution:
+      pool:
+        core-size: 8
+        max-size: 256
+        keep-alive: 60000
+        queue-capacity: 512
+      thread-name-prefix: async-service-task-
 #logging:
 #  level:
 #    com.cy: debug

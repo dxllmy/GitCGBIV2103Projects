@@ -22,6 +22,11 @@ public class PageUtils {
         String pageCurrentStr = request.getParameter("pageCurrent");
         String pageSizeStr = request.getParameter("pageSize");
 
+        if(pageCurrentStr==null||"".equals(pageCurrentStr))
+            pageCurrentStr="1";
+        if(pageSizeStr==null||"".equals(pageSizeStr))
+            pageSizeStr="3";
+
         Integer pageCurrent =Integer.parseInt(pageCurrentStr);
         Integer pageSize = Integer.parseInt(pageSizeStr);
 

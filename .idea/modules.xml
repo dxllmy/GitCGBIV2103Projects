@@ -18,6 +18,9 @@
       <module fileurl="file://$PROJECT_DIR$/jt-admin-04/jt-modules/jt-portals/jt-portals.iml" filepath="$PROJECT_DIR$/jt-admin-04/jt-modules/jt-portals/jt-portals.iml" />
       <module fileurl="file://$PROJECT_DIR$/jt-redis-05/jt-redis-05.iml" filepath="$PROJECT_DIR$/jt-redis-05/jt-redis-05.iml" />
       <module fileurl="file://$PROJECT_DIR$/jt-sca-03/jt-sca-03.iml" filepath="$PROJECT_DIR$/jt-sca-03/jt-sca-03.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jt-security-06/jt-security-06.iml" filepath="$PROJECT_DIR$/jt-security-06/jt-security-06.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jt-security-06/jt-shiro-security/jt-shiro-security.iml" filepath="$PROJECT_DIR$/jt-security-06/jt-shiro-security/jt-shiro-security.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jt-security-06/jt-spring-security/jt-spring-security.iml" filepath="$PROJECT_DIR$/jt-security-06/jt-spring-security/jt-spring-security.iml" />
       <module fileurl="file://$PROJECT_DIR$/jt-admin-04/jt-modules/jt-system/jt-system.iml" filepath="$PROJECT_DIR$/jt-admin-04/jt-modules/jt-system/jt-system.iml" />
       <module fileurl="file://$PROJECT_DIR$/jt-redis-05/jt-template/jt-template.iml" filepath="$PROJECT_DIR$/jt-redis-05/jt-template/jt-template.iml" />
       <module fileurl="file://$PROJECT_DIR$/jt_01/jt_01.iml" filepath="$PROJECT_DIR$/jt_01/jt_01.iml" />

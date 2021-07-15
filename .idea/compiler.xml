@@ -9,6 +9,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="jt-system" />
         <module name="jt_geteway" />
+        <module name="jt-spring-security" />
         <module name="jt-member" />
         <module name="jt-portals" />
         <module name="jt-template" />
@@ -23,6 +24,7 @@
         <module name="jt-commons-basics" />
         <module name="jt-common-basic" />
         <module name="jt_01" />
+        <module name="jt-shiro-security" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -42,7 +44,10 @@
       <module name="jt-portals" target="1.8" />
       <module name="jt-redis-05" target="1.8" />
       <module name="jt-sca-03" target="1.8" />
-      <module name="jt-system" target="1.8" />
+      <module name="jt-security-06" target="1.8" />
+      <module name="jt-shiro-security" target="1.8" />
+      <module name="jt-spring-security" target="1.8" />
+      <module name="jt-system" target="8" />
       <module name="jt-template" target="1.8" />
       <module name="jt_01" target="1.8" />
       <module name="jt_02" target="1.8" />
@@ -68,6 +73,9 @@
       <module name="jt-portals" options="-parameters" />
       <module name="jt-redis-05" options="-parameters" />
       <module name="jt-sca-03" options="-parameters" />
+      <module name="jt-security-06" options="-parameters" />
+      <module name="jt-shiro-security" options="-parameters" />
+      <module name="jt-spring-security" options="-parameters" />
       <module name="jt-system" options="-parameters" />
       <module name="jt-template" options="-parameters" />
       <module name="jt_01" options="-parameters" />
